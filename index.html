@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CYBER MODS</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>CYBER MODS</h1>
+  </header>
+
+  <main>
+    <section class="apk-list" id="apkList"></section>
+  </main>
+
+  <footer>
+    <p> Mod Hecho Por: 👑BESTIA MODZS👑 </p>
+    <p><a href="upload.html" style="color: #f44336; text-decoration: none;">Subir nuevo Mod</a></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const apkList = document.getElementById("apkList");
+
+    appData.forEach(app => {
+      const card = document.createElement("div");
+      card.className = "apk-card";
+      card.innerHTML = `
+        <img src="${app.icon}" alt="App Icon">
+        <h2>${app.name}</h2>
+        <a href="${app.apk}" download> Descargar </a>
+      `;
+      apkList.appendChild(card);
+    });
+  </script>
+</body>
+</html>

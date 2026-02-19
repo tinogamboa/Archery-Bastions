@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subir Mod - CYBER MODS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CYBER MODS</h1>
+  </header>
+
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Volver al Inicio</a>
+    <h2>Subir APK</h2>
+    <p>Comparte tus mods con la comunidad</p>
+
+    <form name="apk-upload" method="POST" netlify enctype="multipart/form-data" action="/success.html">
+      <input type="file" name="apk_file" accept=".apk" required><br>
+      <button type="submit">Subir Apk</button>
+    </form>
+  </div>
+
+  <footer>
+    <p> Mod Hecho Por: 👑BESTIA MODZS👑 </p>
+  </footer>
+</body>
+</html>

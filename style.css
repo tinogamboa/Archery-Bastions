@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #000000;
+  color: #333;
+}
+header {
+  background: #021A83;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.apk-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+.apk-card {
+  background: black;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 80px;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.apk-card img {
+  width: 250px;
+  height: 250px;
+}
+.apk-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 18px 100px;
+  background: #f44336;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+footer {
+  background: #353535;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles for Upload and Success Pages */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #111;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+input, button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+input {
+  background: #222;
+  color: white;
+}
+button {
+  background: #f44336;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+button:hover {
+  background: #d32f2f;
+}
+.back-link {
+  color: #f44336;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
